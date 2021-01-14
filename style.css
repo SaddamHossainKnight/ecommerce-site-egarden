@@ -5,14 +5,20 @@ h2{
     font-size: 40px;
     text-transform: uppercase;
 }
+h4{
+    font-weight: bold;
+}
 p{
-    font-size: 16px;
+    font-size: 18px;
 }
 p,h1, h2, h4{
     font-family: 'Roboto', sans-serif;
     color: #363958;
 }
-header, section{
+header{
+    padding-top: 60px;
+}
+section{
     padding-top: 100px;
 }
 .logo{
@@ -56,7 +62,7 @@ header, section{
     margin-right: 4px;
 }
 .icon{
-    width: 80px;
+    width: 85px;
 }
 .social-icon a img {
     width: 35px;
@@ -67,4 +73,67 @@ header, section{
     background-color: #f1f1ff;
     width: 100%;
     padding-bottom: 70px;
+}
+
+/*Media queries for Mobile devices*/
+@media (max-width: 576px) {
+    h1, h2, h4,h5, p, address{
+        text-align: center;
+    }
+    header{
+        padding-top: 100px;
+    }
+    
+    footer h2{
+        margin-top: 40px;
+    }
+    .service-card {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+    .icon{
+        width: 80px;
+        margin: 0 auto;
+        padding: 5px 0;
+    }
+    .social-icon{
+        display: flex;
+        justify-content:center
+    }
+    .submit{
+        width: 100%;
+        padding:10px 0;
+    }
+}
+/*Media queries for Tablate devices*/
+@media (max-width: 768px) {
+    h1, h2, h4,h5, p, address{
+        text-align: center;
+    }
+    header{
+        padding-top: 100px;
+    }
+   
+    footer h2{
+        margin-top: 40px;
+    }
+    .service-card {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+    .icon{
+        width: 80px;
+        margin: 0 auto;
+        padding: 5px 0;
+    }
+    .social-icon{
+        display: flex;
+        justify-content:center
+    }
+    .submit{
+        width: 100%;
+        padding:10px 0;
+    }
 }
